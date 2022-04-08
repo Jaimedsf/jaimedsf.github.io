@@ -35,14 +35,12 @@
     
     .status-link {
         margin-right: 5px;
-    }
- 
-        </style>
+    }</style>
   </head>
   <body>
     <div id="app" class="main_container">
         <div class="div_batch">
-            <form class="form_batch" @submit="generateBatch" action="#" >
+            <form class="form_batch" @submit="generateBatch" action="#">
                 <div class="form-group"> 
                     <input required maxlength="11" minlength="11" class="form-control" id="listNumbersTextArea" v-model="listNumbers" onkeypress="return event.charCode >= 48 && event.charCode <= 57"></input>
                 </div>
