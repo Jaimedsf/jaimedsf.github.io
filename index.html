@@ -7,7 +7,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
 
     <style>
         .main_container {
@@ -16,7 +16,7 @@
     }
     
     .div_batch {
-        margin: 10%;
+        margin: 1%;
         position: relative;
         border: solid #f8f9fa;
         padding: 1.5rem;
@@ -30,19 +30,18 @@
     }
     
     .list-links {
-        margin: 10%;
+        margin: 1%;
     }
     
-    .status-link {
-        margin-right: 5px;
-    }</style>
+    </style>
   </head>
   <body>
     <div id="app" class="main_container">
         <div class="div_batch">
             <form class="form_batch" @submit="generateBatch" action="#">
                 <div class="form-group"> 
-                    <input required maxlength="13" minlength="13" class="form-control" id="listNumbersTextArea" v-model="listNumbers" onkeypress="return event.charCode >= 48 && event.charCode <= 57"></input>
+                    <input required maxlength="13" minlength="13" class="form-control" id="listNumbersTextArea" 
+                    v-model="listNumbers" onkeypress="event.charCode >= 48 && event.charCode <= 57"></input>
                 </div>
                 <button type="submit" class="btn btn-primary">Criar</button>
             </form>
@@ -72,7 +71,7 @@
     },
     createLink: function(_number) {
         let prefix = "https://api.whatsapp.com/send";
-        let urlPhone = `phone=${this.formatNumber(_number)}`;
+        let urlPhone = `phone=${_number}`;
         let _link = `${prefix}?${urlPhone}`;
         this.messageLinks.push({ number: _number, link: _link, clicked: false});
     },
@@ -80,9 +79,6 @@
       let index = this.messageLinks.indexOf(_link);
       this.messageLinks[index].clicked = true;
       window.open(_link.link) 
-    },
-    formatNumber: function(numberOriginal) {
-        return numberOriginal;
     }
   }
 })
