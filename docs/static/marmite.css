@@ -1,7 +1,10 @@
 /* https://picocss.com/docs */
-/* Font removed to avoid binary asset */
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("./Atkinson-Hyperlegible-Regular-102.woff");
+}
 :root {
-  --pico-font-family: sans-serif;
+  --pico-font-family: "Atkinson Hyperlegible", sans-serif;
   --pico-color-grey-50: #f1f1f1;
   --pico-color-azure-50: #e9f2fc;
   --pico-color-azure-200: #9bccfd;
