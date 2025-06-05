@@ -1,0 +1,20 @@
+/* Custom styles for modern look */
+body {
+    background: linear-gradient(180deg,#f8f8f8,#ffffff);
+}
+[data-theme="dark"] body {
+    background: linear-gradient(180deg,#2b2b2b,#0f0f0f);
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    text-align: center;
+}
+.hero a.button {
+    margin: 0 0.5rem;
+}
+header.header-content {
+    backdrop-filter: blur(3px);
+}
