@@ -9,8 +9,7 @@
     
 <meta property="og:title" content="Dicas de Markdown">
 
-<meta property="og:description" content="Algumas dicas rápidas para formatar seus posts com Markdown.
-">
+<meta property="og:description" content="A seguir, algumas dicas rápidas para você formatar seus posts com Markdown de forma eficiente e clar...">
 
 
 <meta property="og:type" content="article">
@@ -28,8 +27,7 @@
     },
     "url": "/dicas-markdown.html",
     "headline": "Dicas de Markdown",
-    "description": "Algumas dicas rápidas para formatar seus posts com Markdown.
-",
+    "description": "A seguir, algumas dicas rápidas para você formatar seus posts com Markdown de forma eficiente e clara. Markdown é uma linguagem de marcação ...",
     
     
     "publisher": {
@@ -79,12 +77,6 @@
                 <button id="menu-toggle" class="hamburger">&#9776;</button>
                 
                 <ul class="header-menu" id="header-menu">
-                    <li>
-                        <a class="menu-item secondary" href="./pages.html">Posts</a>
-                    </li>
-                    <li>
-                        <a class="menu-item secondary" href="https://github.com/jaimedsf/jaimedsf.github.io">Docs</a>
-                    </li>
                     
                       
                       
@@ -141,7 +133,228 @@
 
   
 
-  <div class="content-html"><p>Algumas dicas rápidas para formatar seus posts com Markdown.</p>
+  <div class="content-html"><p>A seguir, algumas dicas rápidas para você formatar seus posts com Markdown de forma eficiente e clara. Markdown é uma linguagem de marcação leve que permite criar texto rico apenas adicionando símbolos simples ao redor do conteúdo. Este guia aborda desde a formatação básica até elementos mais avançados, como tabelas e blocos de código, tornando seus posts mais legíveis e profissionais.</p>
+<hr />
+<h2><a href="#índice" aria-hidden="true" class="anchor" id="índice"></a>Índice</h2>
+<ol>
+<li><a href="#formata-c3-a7-c3-a3o-b-c3-a1sica">Formatação Básica</a></li>
+<li><a href="#listas">Listas</a></li>
+<li><a href="#links-e-imagens">Links e Imagens</a></li>
+<li><a href="#blocos-de-c-c3-b3digo">Blocos de Código</a></li>
+<li><a href="#tabelas">Tabelas</a></li>
+<li><a href="#dicas-avan-c3-a7adas">Dicas Avançadas</a></li>
+<li><a href="#recursos-e-refer-c3-aancias">Recursos e Referências</a></li>
+</ol>
+<hr />
+<h2><a href="#formatação-básica" aria-hidden="true" class="anchor" id="formatação-básica"></a>Formatação Básica</h2>
+<h3><a href="#cabeçalhos-headings" aria-hidden="true" class="anchor" id="cabeçalhos-headings"></a>Cabeçalhos (Headings)</h3>
+<p>Use o símbolo <code>#</code> seguido de espaço para criar títulos hierárquicos. Há seis níveis de cabeçalho, de <code>#</code> (título principal) a <code>######</code> (título de nível 6).</p>
+<pre><code class="language-markdown"># Título Nível 1
+## Título Nível 2
+### Título Nível 3
+</code></pre>
+<p>Isso gera cabeçalhos semanticamente corretos que ajudam na organização do conteúdo.</p>
+<h3><a href="#texto-em-negrito-e-itálico" aria-hidden="true" class="anchor" id="texto-em-negrito-e-itálico"></a>Texto em Negrito e Itálico</h3>
+<ul>
+<li>
+<p><strong>Negrito</strong>: coloque dois asteriscos <code>**</code> ou dois underlines <code>__</code> ao redor do texto.</p>
+<pre><code class="language-markdown">**Exemplo em negrito**
+__Outro negrito__
+</code></pre>
+<p>Recomenda-se usar asteriscos para evitar conflitos em processadores que interpretam underlines no meio de palavras.</p>
+</li>
+<li>
+<p><em>Itálico</em>: coloque um asterisco <code>*</code> ou um underline <code>_</code> em cada lado do trecho.</p>
+<pre><code class="language-markdown">*Exemplo em itálico*
+_Outro itálico_
+</code></pre>
+<p>Ao enfatizar uma parte de uma palavra, utilize apenas asteriscos para evitar erros de renderização.</p>
+</li>
+</ul>
+<h3><a href="#citação-em-bloco-blockquote" aria-hidden="true" class="anchor" id="citação-em-bloco-blockquote"></a>Citação em Bloco (Blockquote)</h3>
+<p>Para criar uma citação, utilize o símbolo <code>&gt;</code> no início da linha.</p>
+<pre><code class="language-markdown">&gt; Esta é uma citação de exemplo.
+&gt; Ela pode ocupar várias linhas.
+</code></pre>
+<p>Cada nova linha iniciada com <code>&gt;</code> pertence ao mesmo bloco de citação.</p>
+<hr />
+<h2><a href="#listas" aria-hidden="true" class="anchor" id="listas"></a>Listas</h2>
+<h3><a href="#lista-não-ordenada" aria-hidden="true" class="anchor" id="lista-não-ordenada"></a>Lista Não Ordenada</h3>
+<p>Use <code>-</code>, <code>*</code> ou <code>+</code> seguido de espaço para gerar listas não ordenadas.</p>
+<pre><code class="language-markdown">- Item 1
+- Item 2
+  - Subitem 2.1
+* Item 3
++ Item 4
+</code></pre>
+<p>Sempre mantenha uma única convenção (por exemplo, <code>-</code>) para facilitar a leitura e evitar inconsistências.</p>
+<h3><a href="#lista-ordenada" aria-hidden="true" class="anchor" id="lista-ordenada"></a>Lista Ordenada</h3>
+<p>Basta numerar cada item, seguido de ponto e espaço. O Markdown reajusta automaticamente a numeração ao renderizar.</p>
+<pre><code class="language-markdown">1. Primeiro passo
+2. Segundo passo
+3. Terceiro passo
+</code></pre>
+<p>Mesmo que você escreva <code>1.</code> em todos os itens, o processador realinha a numeração corretamente, mas é boa prática numerar manualmente para melhor controle.</p>
+<h3><a href="#listas-aninhadas" aria-hidden="true" class="anchor" id="listas-aninhadas"></a>Listas Aninhadas</h3>
+<p>Para criar subníveis, apenas dê um nível extra de indentação (2 ou 4 espaços, dependendo do processador) antes do marcador.</p>
+<pre><code class="language-markdown">- Item A
+  - Subitem A.1
+    - Subitem A.1.1
+- Item B
+  - Subitem B.1
+</code></pre>
+<p>Cuidado para não misturar espaços e tabs, pois isso pode quebrar a hierarquia da lista.</p>
+<hr />
+<h2><a href="#links-e-imagens" aria-hidden="true" class="anchor" id="links-e-imagens"></a>Links e Imagens</h2>
+<h3><a href="#links" aria-hidden="true" class="anchor" id="links"></a>Links</h3>
+<p>Existem três maneiras comuns de inserir links:</p>
+<ol>
+<li>
+<p><strong>Link Inline</strong></p>
+<pre><code class="language-markdown">[Texto do Link](https://www.exemplo.com)
+</code></pre>
+<p>Use quando deseja que o URL seja inserido diretamente no local da citação.</p>
+</li>
+<li>
+<p><strong>Link de Referência</strong></p>
+<pre><code class="language-markdown">[Digitar Google][1]
+
+[1]: https://www.google.com
+</code></pre>
+<p>Facilita a leitura do Markdown quando existem muitos links repetidos; no final do documento, você agrupa as definições de URL.</p>
+</li>
+<li>
+<p><strong>Link Automático</strong></p>
+<pre><code class="language-markdown">&lt;https://www.exemplo.com&gt;
+</code></pre>
+<p>O Markdown converte automaticamente para link clicável.</p>
+</li>
+</ol>
+<h3><a href="#imagens" aria-hidden="true" class="anchor" id="imagens"></a>Imagens</h3>
+<p>A sintaxe é semelhante à de links, mas precedida por um ponto de exclamação <code>!</code>.</p>
+<pre><code class="language-markdown">![Texto Alternativo](https://www.exemplo.com/imagem.jpg &quot;Título da Imagem&quot;)
+</code></pre>
+<ul>
+<li><strong>Texto Alternativo</strong>: importante para acessibilidade, descreve a imagem.</li>
+<li><strong>Título da Imagem</strong>: aparece como tooltip ao passar o mouse, não obrigatório.</li>
+</ul>
+<hr />
+<h2><a href="#blocos-de-código" aria-hidden="true" class="anchor" id="blocos-de-código"></a>Blocos de Código</h2>
+<h3><a href="#código-em-linha-inline-code" aria-hidden="true" class="anchor" id="código-em-linha-inline-code"></a>Código em Linha (Inline Code)</h3>
+<p>Use crases simples <code>`</code> para destacar trechos de código dentro de uma linha.</p>
+<pre><code class="language-markdown">Para executar, digite `npm install`.
+</code></pre>
+<p>Ideal para comandos curtos e nomes de variáveis.</p>
+<h3><a href="#blocos-de-código-fenced-fenced-code-blocks" aria-hidden="true" class="anchor" id="blocos-de-código-fenced-fenced-code-blocks"></a>Blocos de Código Fenced (Fenced Code Blocks)</h3>
+<p>Para blocos maiores, utilize três crases ``` ou três tils ~~~ antes e depois do bloco de código.</p>
+<pre><code class="language-javascript">function saudacao() {
+  console.log(&quot;Olá, mundo!&quot;);
+}
+</code></pre>
+<p>É possível especificar a linguagem após as crases iniciais para realce de sintaxe (syntax highlighting).</p>
+<h3><a href="#blocos-de-código-com-identação" aria-hidden="true" class="anchor" id="blocos-de-código-com-identação"></a>Blocos de Código com Identação</h3>
+<p>Alguns processadores também aceitam blocos de código com indentação de quatro espaços:<br />
+Este é um bloco de código indentado.
+Ainda dentro do bloco de código.</p>
+<p>No entanto, usar o método com três crases é considerado mais legível e flexível.</p>
+<hr />
+<h2><a href="#tabelas" aria-hidden="true" class="anchor" id="tabelas"></a>Tabelas</h2>
+<p>Para criar tabelas, utilize pipes <code>|</code> para separar colunas e hifens <code>-</code> para separar o cabeçalho do conteúdo. Exemplo:</p>
+<pre><code class="language-markdown">| Linguagem  | Criado em | Paradigma          |
+|------------|-----------|--------------------|
+| JavaScript | 1995      | Multiparadigma     |
+| Python     | 1991      | Orientado a Objetos|
+| Go         | 2009      | Concorrente        |
+</code></pre>
+<ul>
+<li>Alinhamento de colunas pode ser controlado com dois-pontos <code>:</code>:
+<ul>
+<li><code>:---</code> alinha à esquerda</li>
+<li><code>:---:</code> centraliza</li>
+<li><code>---:</code> alinha à direita</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-markdown">| Nome      | Idade | País     |
+|:----------|:----:|---------:|
+| Maria     |  30  | Brasil   |
+| João      |  25  | Portugal |
+</code></pre>
+<p>Tabelas proporcionam organização visual excelente para dados tabulares.</p>
+<hr />
+<h2><a href="#dicas-avançadas" aria-hidden="true" class="anchor" id="dicas-avançadas"></a>Dicas Avançadas</h2>
+<h3><a href="#quebras-de-linha-forçadas" aria-hidden="true" class="anchor" id="quebras-de-linha-forçadas"></a>Quebras de Linha Forçadas</h3>
+<p>Por padrão, uma única quebra de linha no Markdown não gera um novo parágrafo. Para criar uma quebra de linha dentro do mesmo parágrafo, finalize a linha com dois espaços antes de dar Enter:<br />
+Linha 1 com dois espaços ao final<br />
+Linha 2 no mesmo parágrafo<br />
+Ou então utilize <code>&lt;br&gt;</code> diretamente dentro do Markdown:<br />
+Linha 1<br>
+Linha 2</p>
+<p>Use com moderação para manter a semântica correta do texto.</p>
+<h3><a href="#html-inline" aria-hidden="true" class="anchor" id="html-inline"></a>HTML Inline</h3>
+<p>Embora Markdown seja suficiente para a maioria dos casos, você pode incorporar trechos de HTML para customizações específicas, como estilos inline:</p>
+<p style="color: #0077cc;">Este parágrafo tem texto azul.</p>
+Evite misturar em excesso para não perder a legibilidade do Markdown.
+<h3><a href="#comentários-em-markdown" aria-hidden="true" class="anchor" id="comentários-em-markdown"></a>Comentários em Markdown</h3>
+<p>Para deixar comentários que não aparecem na renderização final, use HTML:</p>
+<!-- Este comentário não será exibido -->
+<p>Útil para anotações temporárias ou lembretes em um documento colaborativo.</p>
+<h3><a href="#escape-de-caracteres" aria-hidden="true" class="anchor" id="escape-de-caracteres"></a>Escape de Caracteres</h3>
+<p>Para mostrar um caractere literal que seria interpretado como sintaxe Markdown, preceda-o com barra invertida <code>\</code>. Exemplo:<br />
+Para exibir um asterisco, use *
+Isso é importante quando você precisa escrever exemplos de código ou símbolos sem aplicar a formatação.</p>
+<h3><a href="#adicionando-títulos-e-metadados" aria-hidden="true" class="anchor" id="adicionando-títulos-e-metadados"></a>Adicionando Títulos e Metadados</h3>
+<ul>
+<li>Use metadados YAML (front matter) em posts que suportam (por exemplo, Jekyll, Hugo):</li>
+</ul>
+<hr />
+<p>title: &quot;Meu Post em Markdown&quot;
+date: 2025-06-04
+tags:</p>
+<ul>
+<li>dica</li>
+<li>markdown</li>
+</ul>
+<hr />
+<p>Isso ajuda sistemas de geração estática a categorizar e ordenar seu conteúdo.</p>
+<h3><a href="#sintaxe-estendida-extended-syntax" aria-hidden="true" class="anchor" id="sintaxe-estendida-extended-syntax"></a>Sintaxe Estendida (Extended Syntax)</h3>
+<p>Alguns flavors de Markdown (como GitHub Flavored Markdown, CommonMark) oferecem recursos extras:</p>
+<ul>
+<li><strong>Tarefas (Task Lists)</strong>:</li>
+</ul>
+<pre><code class="language-markdown">- [x] Item concluído
+- [ ] Item pendente
+</code></pre>
+<ul>
+<li><strong>Strikethrough (Riscado)</strong>:</li>
+</ul>
+<pre><code class="language-markdown">~~Texto riscado~~
+</code></pre>
+<ul>
+<li><strong>Autolinks</strong>:</li>
+</ul>
+<pre><code class="language-markdown">&lt;http://www.exemplo.com&gt;
+</code></pre>
+<ul>
+<li><strong>Referências de Issues e Pull Requests</strong> (no GitHub):</li>
+</ul>
+<pre><code class="language-markdown">#123     &lt;!-- refere-se à issue ou PR #123 --&gt;
+</code></pre>
+<p>Aproveite esses recursos para enriquecer seus posts quando disponíveis.</p>
+<hr />
+<h2><a href="#recursos-e-referências" aria-hidden="true" class="anchor" id="recursos-e-referências"></a>Recursos e Referências</h2>
+<ul>
+<li><strong>The Markdown Guide</strong> – Guia completo sobre sintaxe Básica e Estendida.</li>
+<li><strong>Markdown.net.br</strong> – Tutorial em Português com exemplos práticos.</li>
+<li><strong>StackExchange Help Center</strong> – Formatação de posts via Markdown/HTML.</li>
+<li><strong>DIO.me</strong> – Introdução e boas práticas de Markdown.</li>
+<li><strong>Reddit Help</strong> – Diretrizes de formatação em Markdown para comentários e posts.</li>
+<li><strong>WordPress.com</strong> – Como ativar e usar o bloco Markdown no editor do WordPress.</li>
+<li><strong>BRAINS.dev</strong> – Dicas de formatação para Jupyter Notebooks usando Markdown.</li>
+<li><strong>Dev.to</strong> – Boas práticas no VSCode para escrita de artigos em Markdown.</li>
+<li><strong>ObsidianMD Reddit</strong> – Plugins e truques para otimizar a escrita em Markdown.</li>
+</ul>
+<p>Com essas diretrizes e exemplos, você estará pronto para formatar seus posts com Markdown de maneira profissional, legível e visualmente atraente.</p>
 </div>
   
 </article>
