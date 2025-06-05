@@ -1,0 +1,32 @@
+name: Build Blog
+
+on:
+  push:
+    paths:
+      - 'posts/**'
+      - '.github/workflows/marmite.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+      - name: Install marmite
+        run: cargo install marmite
+      - name: Generate site
+        run: marmite posts docs
+      - name: Remove binary assets
+        run: rm -f docs/static/Atkinson-Hyperlegible-Regular-102.woff docs/static/avatar-placeholder.png
+      - name: Commit generated site
+        run: |
+          git config user.name 'github-actions'
+          git config user.email 'github-actions@github.com'
+          git add docs
+          git commit -m 'Update generated site' || echo 'No changes'
+          git push
