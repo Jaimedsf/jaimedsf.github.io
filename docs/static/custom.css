@@ -4,14 +4,18 @@
    :root {
     --font-family-base: 'Inter', sans-serif;
     --color-contrast: #ffffff;
-    --color-bg: #1e1e1e;
+    --color-bg: #fafafa;
     --color-primary: #0077cc;
-    --color-secondary: #f0f0f0;
+    --color-secondary: #333333;
     --header-height: 60px;
   }
   
   body {
     font-family: var(--font-family-base);
+    background-color: var(--color-bg);
+    color: var(--color-secondary);
+    margin: 0;
+    padding: 0;
   }
   
   /* ==============================
@@ -21,7 +25,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background: var(--color-secondary);
+    background: var(--color-contrast);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     height: var(--header-height);
     display: flex;
@@ -39,6 +43,7 @@
     font-weight: 600;
     font-size: 1.25rem;
     color: var(--color-primary);
+    text-decoration: none;
   }
   
   .hamburger {
@@ -55,6 +60,7 @@
     margin-left: auto;
     display: flex;
     align-items: center;
+    position: relative;
   }
   
   .header-menu li {
@@ -64,6 +70,7 @@
   .menu-item {
     text-decoration: none;
     font-weight: 500;
+    color: var(--color-secondary);
     transition: color 0.2s ease;
   }
   
@@ -80,80 +87,86 @@
   }
   
   /* ==============================
-     Underline animado no menu ativo
+     Underline animado (no desktop)
      ============================== */
   .underline {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 3px;
     background: var(--color-primary);
     transition: left 0.3s ease, width 0.3s ease;
-    visibility: hidden;
   }
   
   /* ==============================
-     Hero full-screen
+     Seção “Sobre mim”
      ============================== */
-  .hero {
-    min-height: calc(100vh - var(--header-height));
-    background: url('https://source.unsplash.com/1600x900/?technology') center/cover no-repeat;
+  .about-me {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-card {
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: var(--color-contrast);
-    text-align: center;
-    padding: 2rem 1rem;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
   }
   
-  .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  .profile-avatar {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 1rem;
   }
   
-  .hero h2 {
+  .profile-info {
+    padding: 1rem 1.5rem;
+  }
+  
+  .profile-info h3 {
+    margin: 0 0 0.5rem 0;
     font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 1.5rem;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+    color: var(--color-secondary);
   }
   
-  .hero-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-  }
-  
-  .hero .button {
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
+  .profile-info p {
+    margin: 0;
     font-size: 1rem;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    line-height: 1.5;
+    color: #555;
   }
   
-  .hero .contrast.button {
-    background-color: var(--color-primary);
-    border: none;
-    color: var(--color-contrast);
+  /* ==============================
+     Conteúdo do post
+     ============================== */
+  .main-content {
+    margin: 2rem 0;
   }
   
-  .hero .contrast.button:hover {
-    background-color: darken(var(--color-primary), 10%);
-    transform: translateY(-2px);
+  .content-title h1 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+    color: var(--color-secondary);
   }
   
-  .hero .secondary.button {
-    background-color: transparent;
-    border: 2px solid var(--color-contrast);
-    color: var(--color-contrast);
+  .content-date small {
+    color: #888;
+    font-size: 0.875rem;
   }
   
-  .hero .secondary.button:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
+  .content-html p {
+    line-height: 1.7;
+    margin: 1rem 0;
   }
   
   /* ==============================
@@ -161,12 +174,13 @@
      ============================== */
   .footer-content {
     padding: 1rem 0;
-    background: var(--color-secondary);
-    color: #333;
+    background: #f2f2f2;
+    color: #444;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 1rem;
+    font-size: 0.875rem;
   }
   
   .footer-left,
@@ -192,7 +206,7 @@
       position: absolute;
       top: var(--header-height);
       right: 0;
-      background: var(--color-secondary);
+      background: var(--color-contrast);
       flex-direction: column;
       width: 70%;
       max-width: 240px;
@@ -200,7 +214,6 @@
       transition: transform 0.3s ease;
       box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
       padding-top: 1rem;
-      display: flex;
     }
   
     .header-menu.open {
@@ -214,5 +227,17 @@
     .underline {
       display: none;
     }
+  }
+  
+  /* ==============================
+     Pequenos ajustes adicionais
+     ============================== */
+  a {
+    word-break: break-all;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
   }
   
