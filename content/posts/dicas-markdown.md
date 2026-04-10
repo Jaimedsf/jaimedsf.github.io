@@ -1,5 +1,6 @@
 ---
 title: Dicas de Markdown
+description: "Guia prático de formatação Markdown: cabeçalhos, listas, tabelas, código e front matter."
 date: 2025-06-04
 tags:
   - markdown

@@ -1,5 +1,6 @@
 ---
 title: Usando Cores Personalizadas
+description: "Explorando temas de cores para personalizar o blog Hugo com Hextra."
 date: 2025-06-03
 tags:
   - design

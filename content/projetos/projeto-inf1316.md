@@ -1,5 +1,6 @@
 ---
 title: "Projeto: INF1316"
+description: "Trabalhos de Sistemas Operacionais na PUC-Rio — processos, threads e memória."
 date: 2019-10-21
 tags:
   - sistemas-operacionais

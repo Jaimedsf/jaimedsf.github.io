@@ -1,5 +1,6 @@
 ---
 title: "Projeto: ionic"
+description: "Experimento com Ionic para desenvolvimento mobile híbrido."
 date: 2022-04-26
 tags:
   - ionic

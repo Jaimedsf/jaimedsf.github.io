@@ -1,5 +1,6 @@
 ---
 title: "Projeto: jaimedsf.github.io"
+description: "Blog pessoal construído com Hugo + Hextra, deploy via GitHub Actions."
 date: 2022-04-08
 tags:
   - hugo

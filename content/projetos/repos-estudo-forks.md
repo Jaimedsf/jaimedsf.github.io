@@ -1,5 +1,6 @@
 ---
 title: "Repositórios que sigo e estudo (forks)"
+description: "Forks de projetos open-source que acompanho, estudo e pretendo contribuir."
 date: 2026-04-09
 tags:
   - estudo

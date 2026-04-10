@@ -1,5 +1,6 @@
 ---
 title: "Projeto: Geo"
+description: "Experimentação com geolocalização e dados geográficos."
 date: 2021-04-01
 tags:
   - geo

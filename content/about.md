@@ -42,48 +42,7 @@ Abaixo você encontrará um resumo das minhas habilidades, projetos e experiênc
   <img src="https://img.shields.io/badge/-Hugo-FF4088?logo=hugo&logoColor=white&style=flat-square" alt="Hugo">
 </div>
 
-## Projetos Pessoais
-
-### ailog
-Aplicação em **TypeScript** — projeto pessoal de maior escala no meu GitHub.
-
-### autoWise
-**Sistema Automatizado** desenvolvido em **Ruby** com frontend HTML/JS/CSS.
-
-### jaime-teste-back
-API backend em **Java** com **Dockerfile** — testes com Spring Boot e containerização.
-
-### jaime-teste-front
-Frontend em **JavaScript** — interface complementar ao backend Java.
-
-### ionic_knn
-Aplicação **Ionic/TypeScript** implementando o algoritmo KNN (K-Nearest Neighbors).
-
-### Design
-Trabalho de **Design e Interfaces para Web** — HTML e CSS puros.
-
-### AppBasico
-Aplicação web básica com **HTML, JavaScript, CSS e Python**.
-
-### Rede_Neural_TCC
-Implementação de **rede neural em JavaScript** para o TCC em Sistemas para Internet na Unigrande.
-
-### estagio
-Projeto em **JavaScript** desenvolvido durante período de estágio.
-
-## Repositórios que estudo (forks)
-
-Mantenho forks de projetos open-source que acompanho e estudo:
-
-- **[supabase](https://github.com/Jaimedsf/supabase)** — Backend-as-a-service open-source com Postgres
-- **[strapi](https://github.com/Jaimedsf/strapi)** — Headless CMS em JavaScript/TypeScript
-- **[Checkmate](https://github.com/Jaimedsf/Checkmate)** — Monitoramento de uptime e incidentes
-- **[checkcle_br](https://github.com/Jaimedsf/checkcle_br)** — Plataforma de monitoramento full-stack
-- **[ctop](https://github.com/Jaimedsf/ctop)** — Interface `top` para containers Docker
-- **[tinyauth](https://github.com/Jaimedsf/tinyauth)** — Autenticação simples para apps
-- **[myDrive](https://github.com/Jaimedsf/myDrive)** — Clone do Google Drive em Node.js
-- **[syki](https://github.com/Jaimedsf/syki)** — Sistema de gestão educacional
-- **[Win11Debloat](https://github.com/Jaimedsf/Win11Debloat)** — Script para customizar Windows
+Confira todos os meus [projetos pessoais e repositórios](/projetos/) na seção dedicada.
 
 ## Experiência Profissional
 

@@ -1,5 +1,6 @@
 ---
 title: "Projeto: Jaimedsf.back"
+description: "Configuração do perfil GitHub com README personalizado."
 date: 2022-10-13
 tags:
   - github
