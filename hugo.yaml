@@ -43,6 +43,10 @@ menu:
       url: https://github.com/jaimedsf
       params:
         icon: github
+    - name: Tema
+      weight: 6
+      params:
+        type: theme
 
 params:
   description: Blog pessoal de Jaime da Silva — desenvolvedor Full-Stack
