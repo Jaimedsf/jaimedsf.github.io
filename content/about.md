@@ -45,14 +45,6 @@ Abaixo você encontrará um resumo das minhas habilidades, experiências profiss
 - Suporte técnico em hardware e software.
 - Atendimento a demandas de tecnologia e manutenção de estações de trabalho.
 
-### Atendente Júnior — Liq (2015 — 2018)
-- Atendimento a clientes para vendas, seguindo roteiros pré-definidos.
-- Gestão de relacionamento e resolução de dúvidas de usuários.
-
-### Programador Estagiário — DAE (2014)
-- Manutenção e desenvolvimento de funcionalidades em sistema Java/Web.
-- Apoio na migração de módulos legados e testes de integração.
-
 ## Formação Acadêmica
 
 - **Sistemas para Internet** — Unigrande (2016 — 2020)
