@@ -25,31 +25,26 @@ services:
 
 menu:
   main:
-    - name: Posts
-      pageRef: /posts
+    - name: Sobre
+      pageRef: /about
       weight: 1
       params:
         type: link
-    - name: Sobre
-      pageRef: /about
+    - name: GitHub
       weight: 2
+      url: https://github.com/Jaimedsf
       params:
-        type: link
-    - name: Tags
-      pageRef: /tags
+        icon: github
+    - name: RSS
       weight: 3
+      url: /index.xml
       params:
-        type: link
+        icon: rss
     - name: Search
       weight: 4
       params:
         type: search
-    - name: GitHub
-      weight: 5
-      url: https://github.com/jaimedsf
-      params:
-        icon: github
-    - weight: 6
+    - weight: 5
       params:
         type: theme-toggle
 
