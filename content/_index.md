@@ -1,4 +1,5 @@
 ---
 title: Blog do Jaime
-toc: false
+type: archives
+layout: archives
 ---
