@@ -1,0 +1,65 @@
+baseURL: https://jaimedsf.github.io/
+title: Blog do Jaime
+languageCode: pt-br
+defaultContentLanguage: pt-br
+enableRobotsTXT: true
+enableGitInfo: true
+enableEmoji: true
+hasCJKLanguage: false
+
+# Hextra como Hugo module
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+services:
+  googleAnalytics:
+    ID: ""
+
+menu:
+  main:
+    - name: Posts
+      pageRef: /posts
+      weight: 1
+    - name: Sobre
+      pageRef: /about
+      weight: 2
+    - name: Tags
+      pageRef: /tags
+      weight: 3
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: https://github.com/jaimedsf
+      params:
+        icon: github
+
+params:
+  description: Blog pessoal de Jaime da Silva — desenvolvedor Full-Stack
+  navbar:
+    displayTitle: true
+    displayLogo: false
+  theme:
+    default: system
+    displayToggle: true
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: true
+  page:
+    width: normal
+  blog:
+    list:
+      displayTags: true
+    article:
+      displayPagination: true

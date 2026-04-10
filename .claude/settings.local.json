@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:akitaonrails.com)",
+      "Bash(hugo version:*)",
+      "Bash(go version:*)",
+      "Bash(hugo mod:*)",
+      "Bash(hugo --quiet)",
+      "Bash(hugo)"
+    ]
+  }
+}

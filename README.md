@@ -1,24 +1,63 @@
 # Blog do Jaime
 
-Bem-vindo ao repositório do meu blog pessoal gerado com [Marmite](https://rochacbruno.github.io/marmite/).
+Bem-vindo ao repositório do meu blog pessoal, gerado com [Hugo](https://gohugo.io/) e o tema [Hextra](https://imfing.github.io/hextra/).
 
-A página principal está disponível em **[jaimedsf.github.io](https://jaimedsf.github.io/)** e traz uma experiência simples e moderna para navegar pelos artigos.
+Site publicado em **[jaimedsf.github.io](https://jaimedsf.github.io/)**.
 
-## Posts publicados
+## Stack
 
-- [Usando Cores Personalizadas](docs/usando-cores.html)
-- [Meu Segundo Post](docs/segundo-post.html)
-- [Hello World](docs/hello-world.html)
-- [Dicas de Markdown](docs/dicas-markdown.html)
+- **Gerador**: Hugo (extended)
+- **Tema**: Hextra (via Hugo Modules)
+- **Hospedagem**: GitHub Pages
+- **CI/CD**: GitHub Actions (`.github/workflows/hugo.yml`)
 
-Você também pode conferir a [lista completa de posts](docs/pages.html) e páginas de apoio como [Tags](docs/tags.html) e [Arquivo](docs/archive.html).
+## Estrutura
+
+```
+content/
+  _index.md          → página inicial
+  about.md           → página "Sobre mim"
+  posts/
+    _index.md        → listagem de posts
+    *.md             → posts do blog
+hugo.yaml            → configuração do Hugo/Hextra
+```
 
 ## Como adicionar um novo post
 
-1. Crie um arquivo Markdown em `posts/` com o conteúdo do post.
-2. Rode `marmite posts docs` para atualizar o site estático em `docs/`.
-3. Remova os arquivos binários gerados automaticamente:
-   `rm docs/static/Atkinson-Hyperlegible-Regular-102.woff docs/static/avatar-placeholder.png`
-4. Envie as alterações para o GitHub.
+1. Crie um arquivo em `content/posts/meu-post.md`:
+   ```markdown
+   ---
+   title: Título do post
+   date: 2026-04-09
+   tags:
+     - dev
+     - blog
+   authors:
+     - name: Jaime
+   ---
 
-O GitHub Pages está configurado para servir o conteúdo da pasta `docs/`.
+   Conteúdo em markdown...
+   ```
+2. Commit e push na branch `main`.
+3. O GitHub Actions builda e publica automaticamente.
+
+## Rodando localmente
+
+```bash
+hugo server -D
+```
+
+Abra <http://localhost:1313/>.
+
+## Build local
+
+```bash
+hugo --minify
+```
+
+O site gerado fica em `public/` (ignorado pelo git).
+
+## Configuração do GitHub Pages
+
+O source está configurado como **GitHub Actions** (Settings → Pages → Source).
