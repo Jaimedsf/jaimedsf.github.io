@@ -28,12 +28,18 @@ menu:
     - name: Posts
       pageRef: /posts
       weight: 1
+      params:
+        type: link
     - name: Sobre
       pageRef: /about
       weight: 2
+      params:
+        type: link
     - name: Tags
       pageRef: /tags
       weight: 3
+      params:
+        type: link
     - name: Search
       weight: 4
       params:
@@ -43,6 +49,9 @@ menu:
       url: https://github.com/jaimedsf
       params:
         icon: github
+    - weight: 6
+      params:
+        type: theme-toggle
 
 params:
   description: Blog pessoal de Jaime da Silva — desenvolvedor Full-Stack
